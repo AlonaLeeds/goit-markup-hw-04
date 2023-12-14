@@ -140,6 +140,11 @@ img {
   text-align: center;
   padding: 188px 0 188px;
   background-color: #2e2f42;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70))
+, url(../images/hero/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 .hero .container {
   flex-direction: column;
@@ -268,6 +273,9 @@ button:focus {
 }
 .our-portfolio-list {
   width: calc ((100% - 48px)/3);
+}
+.our-portfolio-list:hover {
+  box-shadow:  0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .app-description {
   padding: 32px 16px;
