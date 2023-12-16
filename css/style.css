@@ -99,7 +99,8 @@ img {
   display: flex;
   gap: 40px;
 }
-.menu-li {
+.menu-link {
+  position: relative;
   display: block;
   padding: 24px 0;
 }
@@ -119,12 +120,15 @@ img {
 .menu a:focus {
   color: #404bbf;
 }
-.menu-li::after{
-  content: "";
-  width: 100%;
+.menu-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
   display: block;
+  width: 100%;
+  height: 4px;
   border-radius: 2px;
-  background-color: #404BBF;
+  background-color: #404bbf;
 }
 .address {
   font-style: normal;
@@ -149,8 +153,11 @@ img {
   text-align: center;
   padding: 188px 0 188px;
   background-color: #2e2f42;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70))
-, url(../images/hero/people-office.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/people-office.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -216,6 +223,20 @@ button:focus {
 .our-values-list {
   width: calc((100% - 72px) / 4);
 }
+.our-values-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background-color: #f4f4fd;
+  margin-bottom: 8px;
+  height: 112px;
+}
+.benefits-icon {
+  height: 64px;
+}
+
 .main-page {
   font-size: 20px;
   color: #2e2f42;
@@ -270,31 +291,31 @@ button:focus {
   color: #2e2f42;
   font-weight: 500;
 }
-.description{
+.description {
   margin-bottom: 8px;
 }
-.social{
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
 }
-.social-member{
+.social-member {
   width: 40px;
   height: 40px;
 }
-.social-link{
+.social-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #4D5AE5;
+  background-color: #4d5ae5;
   border-radius: 50%;
 }
 .social-link:hover,
-.social-link:focus{
-  background-color: #404BBF;
+.social-link:focus {
+  background-color: #404bbf;
 }
 .social-icon .team {
   padding: 0;
@@ -316,7 +337,9 @@ button:focus {
   width: calc ((100% - 48px)/3);
 }
 .our-portfolio-list:hover {
-  box-shadow:  0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .app-description {
   padding: 32px 16px;
@@ -329,9 +352,13 @@ footer {
   padding: 100px 0;
   background-color: #2e2f42;
 }
-
+.footer-top {
+  display: flex;
+}
 footer a {
-  display: inline-block;
+  display: block;
+  justify-content: left;
+  align-items: center;
   color: #4d5ae5;
   text-transform: uppercase;
   letter-spacing: 0.54px;
@@ -344,13 +371,40 @@ footer a {
   letter-spacing: 0.03em;
 }
 .footer-descrioption {
-  display: block;
+  display: flex;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+  margin-right: 120px;
 }
 .footer span {
   color: #f4f4fd;
+}
+
+.footer-caption {
+  margin-bottom: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.28;
+  color: #fff;
+}
+
+.footer-socials {
+  display: flex;
+  margin-right: 50px;
+}
+.footer .socials-link {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-link {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.footer .social-link:hover,
+.footer .social-link:focus {
+  color: #31d0aa;
 }

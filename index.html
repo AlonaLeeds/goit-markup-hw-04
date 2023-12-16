@@ -24,9 +24,15 @@
          <nav class="navbar">
             <a class="logo" href="./index.html">Web<span>Studio</span></a>
             <ul class="menu">
-               <li><a class="menu-li" href="./index.html">Studio</a></li>
-               <li><a class="menu-li" href="">Portfolio</a></li>
-               <li><a class="menu-li" href="">Contacts</a></li>
+               <li class="menu-item">
+                  <a class="menu-link active" href="./index.html">Studio</a>
+               </li>
+               <li class="menu-item">
+                  <a class="menu-link" href="">Portfolio</a>
+               </li>
+               <li class="menu-item">
+                  <a class="menu-link" href="">Contacts</a>
+               </li>
             </ul>
          </nav>
          <address class="address">
@@ -55,43 +61,53 @@
 
             <ul class="our-values-description">
                <li class="our-values-list">
-                  <svg class="benefits-icon" width="64" heigth="64">
-                     <use href="./images/icons.svg#icon-antenna"></use>
-                  </svg>
+                  <div class="our-values-wrapper">
+                     <svg class="benefits-icon" width="64" heigth="64">
+                        <use href="./images/icons.svg#icon-antenna"></use>
+                     </svg>
+                  </div>
                   <h3 class="main-page">Strategy</h3>
                   <p class="description">
                      Our goal is to identify the business
                      problem to walk away with the perfect and creative solution.
                   </p>
+
                </li>
                <li class="our-values-list">
-                  <svg class="benefits-icon" width="64" heigth="64">
-                     <use href="./images/icons.svg#icon-clock"></use>
-                  </svg>
+                  <div class="our-values-wrapper">
+                     <svg class="benefits-icon" width="64" heigth="64">
+                        <use href="./images/icons.svg#icon-clock"></use>
+                     </svg>
+                  </div>
                   <h3 class="main-page">Punctuality</h3>
                   <p class="description">Bring the key message to the brand's audience for the best price within the
                      shortest possible time.
                   </p>
+
                </li>
                <li class="our-values-list">
-                  <svg class="benefits-icon" width="64" heigth="64">
-                     <use href="./images/icons.svg#icon-diagram"></use>
-                  </svg>
+                  <div class="our-values-wrapper">
+                     <svg class="benefits-icon" width="64" heigth="64">
+                        <use href="./images/icons.svg#icon-diagram"></use>
+                     </svg>
+                  </div>
                   <h3 class="main-page">Diligence</h3>
                   <p class="description">Research and confirm brands that present the strongest digital growth
                      opportunities and minimize risk.
                   </p>
+
                </li>
                <li class="our-values-list">
-                  <svg class="benefits-icon" width="64" heigth="64">
-                     <use href="./images/icons.svg#icon-astronaut"></use>
-                  </svg>
+                  <div class="our-values-wrapper">
+                     <svg class="benefits-icon" width="64" heigth="64">
+                        <use href="./images/icons.svg#icon-astronaut"></use>
+                     </svg>
+                  </div>
                   <h3 class="main-page">Technologies</h3>
-                  <p class="description">Design practice focused on digital experiences. We bring forth a deep
-                     passion
-                     for
-                     problem-solving.
+                  <p class="description">Design practice focused on digital experiences. We bring forth a deeppassion
+                     for problem-solving.
                   </p>
+
                </li>
             </ul>
          </div>
@@ -247,8 +263,8 @@
                            </a>
                         </li>
                         <li class="social-member">
-                           <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
-                              aria-label="facebook site">
+                           <a class="social-link" href="https://www.facebook.com/" target="_blank"
+                              rel="noopener noreferrer" aria-label="facebook site">
                               <svg class="social-icon" width="16" heigth="16">
                                  <use href="./images/icons.svg#icon-facebook"></use>
                               </svg>
@@ -263,7 +279,7 @@
                            </a>
                         </li>
                      </ul>
-         </div>
+                  </div>
       </section>
       <section class="our-portfolio section">
          <div class="container">
@@ -318,47 +334,54 @@
    </main>
    <footer class="footer">
       <div class="container">
-         <a class="footer-logo" href="/">Web<span class="studio">Studio</span></a>
-         <p class="footer-descrioption">Increase the flow of customers and sales for your business with digital
-            marketing &#38;
-            growth
-            solutions.
-         </p>
-         <ul class="footer-social">
-            <li class="footer-social-member">
-               <a class="footer-social-link" href="https://intagram.com" target="_blank" rel="noopener noreferrer"
-                  aria-label="instagram site">
-                  <svg class="social-icon" width="16" heigth="16">
-                     <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-               </a>
-            </li>
-            <li class="footer-social-member">
-               <a class="footer-social-link" href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                  aria-label="twitter site">
-                  <svg class="social-icon" width="16" heigth="16">
-                     <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-               </a>
-            </li>
-            <li class="footer-social-member">
-               <a class="footer-social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
-                  aria-label="facebook site">
-                  <svg class="social-icon" width="16" heigth="16">
-                     <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-               </a>
-            </li>
-            <li class="footer-social-member">
-               <a class="footer-social-link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-                  aria-label="linkedin site">
-                  <svg class="social-icon" width="16" heigth="16">
-                     <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-               </a>
-            </li>
-         </ul>
-      </div>
+         <div class="footer-top">
+            <div>
+               <a class="footer-logo" href="/">Web<span class="studio">Studio</span></a>
+               <p class="footer-descrioption">Increase the flow of customers and sales for your business with digital
+                  marketing &#38;
+                  growth
+                  solutions.
+               </p>
+            </div>
+            <div class="footer-social">
+               <p class="footer-caption">Social media</p>
+               <ul class="social">
+                  <li class="social-member">
+                     <a class="social-link" href="https://intagram.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="instagram site">
+                        <svg class="social-icon" width="16" heigth="16">
+                           <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social-member">
+                     <a class="social-link" href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="twitter site">
+                        <svg class="social-icon" width="16" heigth="16">
+                           <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social-member">
+                     <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="facebook site">
+                        <svg class="social-icon" width="16" heigth="16">
+                           <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social-member">
+                     <a class="social-link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="linkedin site">
+                        <svg class="social-icon" width="16" heigth="16">
+                           <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+
+         </div>
    </footer>
 </body>
 
