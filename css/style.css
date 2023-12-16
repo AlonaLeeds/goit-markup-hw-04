@@ -358,14 +358,13 @@ button:focus {
   display: flex;
   justify-content: center;
   padding: 40px 32px;
-   color: #F4F4FD;
-   background-color: #4d5ae5;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
 
-   transform: translateY(100%);
-   transition: transform 1s ease-in;
-
+  transform: translateY(100%);
+  transition: transform 1s ease-in;
 }
-.our-portfolio-list:hover .overlay{
+.our-portfolio-list:hover .overlay {
   transform: translateY(0);
 }
 .our-portfolio-list > h3,
@@ -418,27 +417,18 @@ footer a {
 }
 
 .footer-caption {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.28;
   color: #fff;
 }
 
-.footer-socials {
-  display: flex;
-  margin-right: 50px;
-}
-.footer .socials-link {
-  color: #ffffff;
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
 .footer .social-link {
   color: #ffffff;
   border-color: rgba(255, 255, 255, 0.1);
 }
-.footer .social-link:hover,
-.footer .social-link:focus {
-  color: #31d0aa;
+.footer-social .social-link:hover,
+.footer-social .social-link:focus {
+  background-color: #31d0aa;
 }
