@@ -398,7 +398,7 @@ footer {
 .footer-top {
   margin-right: 120px;
 }
-footer a {
+footer >a {
   display: block;
   justify-content: left;
   align-items: center;
@@ -440,8 +440,12 @@ footer a {
   align-items: center;
   gap: 16px;
 }
-
+.footer .social-icon{
+  width: 24px;
+  height: 24px;
+}
 .footer .social-link {
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
   border-color: rgba(255, 255, 255, 0.1);
 }
