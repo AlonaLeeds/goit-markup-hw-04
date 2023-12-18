@@ -432,7 +432,6 @@ footer {
   color: #f4f4fd;
   max-width: 264px;
   margin-left: 156px;
-  margin-right: 120px;
 }
 .footer span {
   color: #f4f4fd;
@@ -446,7 +445,7 @@ footer {
   color: #ffffff;
   letter-spacing: 0.02em;
 }
-.footer-social {
+.footer-social-list {
   display: flex;
   justify-content: center;
   align-items: center;
