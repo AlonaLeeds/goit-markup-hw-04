@@ -374,6 +374,7 @@ button:focus {
   background-color: #4d5ae5;
 
   transform: translateY(100%);
+  transition: transform 250ms ease-in;
   transition: transform cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-portfolio-list:hover .overlay {
