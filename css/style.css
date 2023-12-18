@@ -105,6 +105,8 @@ img {
   position: relative;
   display: block;
   padding: 24px 0;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu a {
   font-family: Roboto;
@@ -167,6 +169,7 @@ img {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  max-width: 1440px;
 }
 .hero .container {
   flex-direction: column;
@@ -196,6 +199,7 @@ img {
   cursor: pointer;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 button:hover {
   background-color: #404bbf;
@@ -369,12 +373,12 @@ button:focus {
 
   transform: translateY(100%);
   transition: transform 1s ease-in;
-  transform:  cubic-bezier(0.4, 0, 0.2, 1); 
+  transform: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-portfolio-list:hover .overlay {
   transform: translateY(0%);
 }
-.our-portfolio-list{
+.our-portfolio-list {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-portfolio-list > h3,
@@ -402,7 +406,7 @@ footer {
 .footer-top {
   margin-right: 120px;
 }
-footer >a {
+.footer-logo {
   display: block;
   justify-content: left;
   align-items: center;
@@ -416,6 +420,7 @@ footer >a {
   text-transform: uppercase;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-left: 156px;
 }
 .footer-descrioption {
   display: flex;
@@ -424,6 +429,7 @@ footer >a {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+  margin-left: 156px;
   margin-right: 120px;
 }
 .footer span {
@@ -444,12 +450,13 @@ footer >a {
   align-items: center;
   gap: 16px;
 }
-.footer .social-icon{
-  width: 24px;
-  height: 24px;
+.footer .social-member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer .social-link {
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
   border-color: rgba(255, 255, 255, 0.1);
 }
