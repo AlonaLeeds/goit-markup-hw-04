@@ -64,7 +64,7 @@ img {
 }
 
 /* header */
-.main-header .container {
+.main-header  {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -72,7 +72,7 @@ img {
   flex-wrap: wrap;
   gap: 24px;
 }
-.main-header {
+.header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -107,17 +107,22 @@ img {
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.32px;
-  /* color: #2e2f42; */
+  color: #2e2f42;
   position: relative;
   display: block;
   padding: 24px 0;
-  color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.menu a:hover {
+.menu-link:hover{
   color: #404bbf;
 }
+.menu-link.active{
+  color: #404bbf;
+}
+.menu-link.active:hover {
+  color: #404bbf;
+}
+
 .menu-link.active:active,
 .menu-link.active:focus {
   color: #404bbf;
@@ -168,6 +173,7 @@ img {
   background-position: 50% 50%;
   background-size: cover;
   max-width: 1440px;
+  margin: 0 auto;
 }
 .hero .container {
   flex-direction: column;
@@ -344,7 +350,7 @@ button:focus {
   row-gap: 48px;
 }
 .our-portfolio-list {
-  width: calc ((100% - 48px)/3);
+  width: calc((100% - 48px)/3);
 }
 .our-portfolio-list:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -398,7 +404,7 @@ footer {
   padding: 100px 0;
   background-color: #2e2f42;
 }
-.footer-container {
+.footer-container.container {
   display: flex;
   align-items: baseline;
 }
@@ -419,7 +425,7 @@ footer {
   text-transform: uppercase;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-left: 156px;
+
 }
 .footer-descrioption {
   display: flex;
@@ -428,7 +434,7 @@ footer {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  margin-left: 156px;
+  
 }
 .footer span {
   color: #f4f4fd;
