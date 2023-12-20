@@ -67,10 +67,7 @@ img {
 .main-header {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -412,7 +409,7 @@ footer {
   margin-right: 120px;
 }
 .footer-logo {
-  display: block;
+  display: inline-block;
   justify-content: left;
   align-items: center;
   color: #4d5ae5;
